@@ -1,0 +1,45 @@
+/* FONTS USED: */
+/* love light */ @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Love+Light&display=swap");
+/* rochester */ @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Love+Light&family=Rochester&display=swap");
+
+
+
+/* --- BACKGROUND FOR ALL PAGES --- */
+body{
+    background-image: url("/0StartupIMG/1background.png");
+}
+
+/* aBnstartupScreen */
+#startup-text{
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:125px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16rem;
+
+    transition-duration: 2s;
+    color:white;
+    color: black;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+/* @keyframes example {
+    0%   {background-color:red; left:200px; top:200px;}
+    25%  {background-color:yellow; left:1700px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:200px; top:200px;}
+} */
