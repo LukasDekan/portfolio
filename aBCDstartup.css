@@ -1,0 +1,158 @@
+/* FONTS USED: */
+/* love light */ @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Love+Light&display=swap");
+/* rochester */ @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Love+Light&family=Rochester&display=swap");
+:root {
+    /* --- BACKROUND COLOR --- */
+    background-color: rgb(246, 246, 246);
+
+    /* CONTENT COLORS */
+    --contentBlue: #5ac7e8;
+    --contentOrange: #e6821e;
+    /* TEXT COLORS */
+    --textSunburn: #c7ab8f;
+    --textGrey: #5d6669;
+
+    /* EXTRA COLORS */
+    --extraColor: #6c9aa8;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40vh 20vh 40vh;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    #leaf1 { grid-area: 1 / 1 / 2 / 2; }
+    #leaf2 { grid-area: 1 / 3 / 2 / 4; }
+    #startup-text { grid-area: 2 / 2 / 3 / 3; }
+    #leaf3 { grid-area: 3 / 1 / 4 / 2; }
+    #leaf4 { grid-area: 3 / 3 / 4 / 4; }
+    .div6 { grid-area: 1 / 2 / 2 / 3; }
+    .div7 { grid-area: 3 / 2 / 4 / 3; }
+
+
+/* --- BACKGROUND FOR ALL PAGES --- */
+/* body{
+    background-image: url("/0StartupIMG/1background.png");
+} */
+
+/* aBnstartupScreen */
+.startUp-parent{
+    height: 100vh;
+    overflow-x: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#startup-text{
+    transition-duration: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:150px;
+    text-decoration: none;
+
+    color:black;
+    animation-name: example;
+
+
+    animation-duration: 3s;
+}
+
+#startup-text:hover{
+    color: var(--textSunburn);
+    font-size:200px;
+    text-shadow: 6px 5px 10px rgba(0, 0, 0, 0.33);
+}
+
+  #leaf1 {
+    /* margin-bottom: 30rem; */
+    
+    animation-name: leafAnimation1;
+    animation-duration: 3s;
+  }
+
+  #leaf2 {
+    
+    /* margin-bottom: 30rem;
+    margin-left: 3rem; */
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    animation-name: leafAnimation1;
+    animation-duration: 3s;
+  }
+
+  #leaf3 {
+    /* margin-top: 30rem;
+    margin-right: 50rem; */
+    transform: scaleY(-1);
+
+    animation-name: leafAnimation1;
+    animation-duration: 3s;
+  }
+
+  #leaf4 {
+    /* margin-top: 30rem; */
+    -webkit-transform: scaleX(-1);
+    transform: scale(-1, -1);
+    animation-name: leafAnimation1;
+    animation-duration: 3s;
+  }
+
+  .div6{
+    font-family: "Rochester", cursive;
+    animation-name: example;
+    animation-duration: 3s;
+    font-size:30px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .div7{
+    font-family: "Rochester", cursive;
+    animation-name: example;
+    animation-duration: 3s;
+    font-size:30px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  @keyframes example {
+    from {color: white;}
+    to {color: black;}
+  }
+
+  
+  @keyframes leafAnimation1 {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  }
+
+/* @keyframes example {
+    0%   {background-color:red; left:200px; top:200px;}
+    25%  {background-color:yellow; left:1700px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:200px; top:200px;}
+} */
