@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="aBCstyle.css">
 </head>
 <body>
+  <div id="home-fade-in"></div>
     <!-- NAVIGATION MENU -->
     <header>
         <nav>
@@ -92,6 +93,12 @@
       </section>
     </article>
 
-
+    <!-- --- THIS SCRIPT IS IN CHARGE OF THE FADE-OUT ANIMATION --- -->
+    <script>
+      window.addEventListener("load", () => {
+        const fadeOverlay = document.getElementById("home-fade-in");
+        fadeOverlay.classList.add("fade-out");
+      });
+    </script>
 </body>
 </html>

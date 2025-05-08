@@ -149,10 +149,25 @@ img {
     to {opacity: 100%;}
   }
 
-/* @keyframes example {
-    0%   {background-color:red; left:200px; top:200px;}
-    25%  {background-color:yellow; left:1700px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:200px; top:200px;}
-} */
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* --- FADE-IN FADE-OUT PAGE TRANSITION --- */
+#white-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.start-transition {
+  animation: fullWhiteToFade 1s forwards;
+}
+
+@keyframes fullWhiteToFade {
+  0%   { opacity: 0; }  
+  100% { opacity: 1; }   /* fade out to reveal next page */
+}

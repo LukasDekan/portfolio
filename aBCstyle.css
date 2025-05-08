@@ -8,6 +8,23 @@ body{
     background-image: url("/0StartupIMG/1background.png");
 }
 
+#home-fade-in {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 9999;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 3s ease-in-out;
+  }
+  
+  #home-fade-in.fade-out {
+    opacity: 0;
+  }
+  
 /* aBnstartupScreen */
 /* #startup-text{
     font-family: "Rochester", cursive;

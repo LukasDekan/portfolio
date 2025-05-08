@@ -1,0 +1,98 @@
+:root {
+    /* --- BACKROUND COLOR --- */
+    background-color: rgb(246, 246, 246);
+
+    --headerColor:#38b6ff;
+    --leftHandSide: #5271ff;
+}
+
+/* ---------------------------------------------------------- */
+/* GENERAL PARENT CLASS FOR ARTICLE CONTAINER */
+/* .resume-header-leftSide-connection{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: ;
+} */
+
+/* ---------------------------------- */
+/* HEADER STYLING */
+
+#resume-header{
+    padding: 1rem;
+    padding-left: 40%;
+    line-height: 0.6rem;
+
+    background-color: var(--headerColor);
+    color: white;
+}
+
+#resume-header h1{
+    font-size: 35px;
+}
+
+#graduation-text{
+    font-size: large;
+    font-weight: bold;
+}
+
+#resume-header h2{
+    font-weight: lighter;
+}
+/* ---------------------------------- */
+
+
+
+
+
+
+
+/* ---------------------------------- */
+/* ICON/AVATAR/INITIALS STYLING */
+#resume-ld-icon{
+    
+}
+/* ---------------------------------- */
+
+
+
+
+
+
+
+/* ---------------------------------- */
+/* LEFT-HAND SIDE STYLING */
+.resume-leftHand-side{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--leftHandSide);
+    margin-right: 70%;
+}
+
+.resume-leftHand-side h2{
+    text-decoration: underline;
+}
+
+.resume-leftHand-side section{
+    padding-left: 2rem;
+    justify-self: center;
+}
+
+/* THE SPECIFIC PROGRAMMING SKILLS UNDER "PROGRAMMING SKILLS" */
+#prog-skills{
+    padding-left: 3rem;
+    font-size: small;
+    line-height: 0.4rem;
+}
+
+#resume-whiteText{
+    color: white;
+}
+
+/* ~~ volunteer experience ~~ */
+#volunteer-box{
+
+}
+/* ---------------------------------- */
+
+
+

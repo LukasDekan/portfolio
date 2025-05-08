@@ -37,5 +37,21 @@
         </section>
     </article>
 
+    <div id="white-transition"></div>
+
+    <script>
+    const beginLink = document.getElementById("startup-text");
+    beginLink.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent immediate navigation
+
+        const overlay = document.getElementById("white-transition");
+        overlay.classList.add("start-transition");
+
+        setTimeout(() => {
+        window.location.href = beginLink.href; // Navigate after 6 seconds
+        }, 3000);
+    });
+    </script>
+
 </body>
 </html>
