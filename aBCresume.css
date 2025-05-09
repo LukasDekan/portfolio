@@ -4,6 +4,7 @@
 
     --headerColor:#38b6ff;
     --leftHandSide: #5271ff;
+    --volunteerColor: #c2f6ff;
 }
 
 /* ---------------------------------------------------------- */
@@ -21,9 +22,13 @@
     padding: 1rem;
     padding-left: 40%;
     line-height: 0.6rem;
+    position: relative; /* Ensure it stacks properly */
+    z-index: 5; /* Lower z-index than #resume-ld-icon */
 
     background-color: var(--headerColor);
     color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional styling */
+
 }
 
 #resume-header h1{
@@ -42,14 +47,32 @@
 
 
 
-
-
-
+/* Parent container for left-hand side and main info */
+.resume-content {
+    display: flex; /* Align children side by side */
+    margin-top: 2rem; /* Add spacing below the header */
+}
 
 /* ---------------------------------- */
 /* ICON/AVATAR/INITIALS STYLING */
-#resume-ld-icon{
-    
+#resume-ld-icon {
+    position: absolute; /* Position it absolutely */
+    top: 50%; /* Adjust this value to place it correctly */
+    left: 8%; /* Adjust this value to align it horizontally */
+    z-index: 10; /* Ensure it appears above other elements */
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 100%;
+}
+
+#resume-ld-icon h1{
+    color:var(--headerColor);
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 90px;
+    text-align: center;
 }
 /* ---------------------------------- */
 
@@ -61,18 +84,20 @@
 
 /* ---------------------------------- */
 /* LEFT-HAND SIDE STYLING */
-.resume-leftHand-side{
-    display: flex;
-    flex-direction: column;
+.resume-leftHand-side {
+    flex: 1; /* Take up 1 part of the available space */
     background-color: var(--leftHandSide);
-    margin-right: 70%;
+    padding: 2rem;
+    margin-right: 2rem; /* Add spacing between the two articles */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional styling */
 }
 
 .resume-leftHand-side h2{
     text-decoration: underline;
 }
 
-.resume-leftHand-side section{
+#resume-leftHand-side-section{
+    color: white;
     padding-left: 2rem;
     justify-self: center;
 }
@@ -84,15 +109,25 @@
     line-height: 0.4rem;
 }
 
-#resume-whiteText{
-    color: white;
-}
-
 /* ~~ volunteer experience ~~ */
 #volunteer-box{
-
+    background-color: var(--volunteerColor);
+    padding-left: 8%;
+    padding-right: 8%;    
+}
+#volunteer-box h2{
+    justify-self: center;
 }
 /* ---------------------------------- */
 
+
+/* ---------------------------------- */
+/* RESUME STYLING */
+#resume-main-info {
+    flex: 2; /* Take up 2 parts of the available space */
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional styling */
+}
 
 
