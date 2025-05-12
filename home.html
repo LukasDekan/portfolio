@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aBCstyle.css">
+</head>
+<body>
+  <div id="home-fade-in"></div>
+    <!-- NAVIGATION MENU -->
+    <header>
+        <nav>
+          <ul>
+              <ul>
+                <li><a href="home.html">Lukas' Portfolio</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <!-- FOR THESE PAGES, UTILIZE THE DROPDOWN EXCERSISE FROM THE 1ST SEMESTER -->
+                <li><a href="thanksGiving.html">Thanksgiving Website</a></li>
+                <li><a href="pulp.html">PlayDate and Pulp</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+
+                <!-- FOR THESE PAGES, UTILIZE THE DROPDOWN EXCERSISE FROM THE 1ST SEMESTER -->
+                <li><a href="art.html">Art</a></li>
+                <li><a href="landscape.html">Landscape Painting</a></li>
+
+                <!-- SEPERATE PAGE -->
+                <li><a href="writings.html">Writings</a></li>
+
+
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </ul>
+        </nav>
+
+        <article class="parallax">
+          <section class="text-container">
+            <h1>Lukas' Portfolio</h1>
+          </section>
+        </article>
+      </header>
+    <!-- NAVIGATION MENU -->
+
+    
+    
+    <article>
+      <section>
+        <p>Welcome to my Personal Portfolio Website! My name is Lukas Dekan, and I am an aspiring game developer who strives to constantly improve his skills in different areas such as programming, concept art, level design and pixel art. In this website, you will find some of my favorite projects that I’ve completed over the years, as well as the process that I went through in order to complete them. I hope you enjoy my site as much as I enjoyed making it!</p>
+      </section>
+    </article>
+
+    <article>
+      <section>
+        <h2>Introduction</h2>
+      </section>
+      <section>
+        <p>My game development journey began in 2021, a time when I was a complete rookie. I had no clue what game design, concept art or programming actually felt like, but I knew that if I wanted to make functional games, I had to focus on the latter area of study. Thus, I started my adventure by delving into the vast world of coding, and my first step was to go on YouTube in search of a tutorial, one that could explain programming to beginners like me. This was when I discovered a video made by Brackeys, a channel that would later become one of my main sources of inspiration. The video not only served as an introduction to the world of programming, but it was also the beginning of a series of videos, all covering the basics of C#, which became my first coding language. Since then, I’ve completed many tutorials, worked with an amazing game engine, delved into the world of pixel art, started a concept art sketchbook, and so much more. </p>
+        <img src="/4indexIMG/index-frenchBoulevard.jpg" alt="French Boulevard" width="100%">
+      </section>
+    </article>
+
+    <article>
+      <section>
+        <h1>What to Expect:</h1>
+      </section>
+
+      <section>
+        <p>You, my dear user, are about to step foot into an exciting adventure! The door is open to you, but there are so many diverging paths, and yet they all lead to one destination. Let me give you a quick rundown on what you can expect from this website, including the pages available and the projects I’ve included.</p>      
+      </section>
+
+      <section>
+        <p>Start your journey on the Home Page, where you’ll find a brief introduction to who I am and how I got into game development. Then, head over to the About Me Page to learn more about my background, academic achievements, hobbies, and future goals.
+        </p>
+      </section>
+      <section>
+        <ul>
+            <li>The Thanksgiving Website page showcases one of my favorite web development projects, inspired by the warm aesthetics of Fall.
+            </li>
+            <li>On the Playdate and Pulp page, you’ll explore my experience using a unique game development tool designed for handheld gaming.
+            </li>
+            <li>The Completed Tutorials page features the foundational tutorials that helped me build my programming skills and confidence.</li>
+            <li>The Landscape Painting page features a detailed scene of a castle on a rocky hill, surrounded by a lush forest and distant mountains, capturing my love for nature and dramatic landscapes.
+            </li>
+            <li>For art lovers, the Art page combines my passion for pixel art and concept art. You’ll see how I create tiny sprites for games, sketch out ideas in my sketchbook, and experiment with visual storytelling.
+            </li>
+            <li>The Writings page includes two pieces of analytical writing: The War of Finance, which explores personal budgeting and financial challenges, and The Blinding Torch, an essay focused on the theme of human pride.
+            </li>
+        </ul>
+      </section>
+      <section>
+        <p>And finally, if you're interested in connecting or exploring potential opportunities, head over to the Contact Page, where you can find links to my professional profiles and send me a message directly.</p>
+        <p>So go ahead—click around, explore, and enjoy the journey!
+        </p>
+      </section>
+    </article>
+
+    <!-- --- THIS SCRIPT IS IN CHARGE OF THE FADE-OUT ANIMATION --- -->
+    <script>
+      window.addEventListener("load", () => {
+        const fadeOverlay = document.getElementById("home-fade-in");
+        fadeOverlay.classList.add("fade-out");
+      });
+    </script>
+</body>
+</html>

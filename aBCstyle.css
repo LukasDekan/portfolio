@@ -2,6 +2,56 @@
 /* love light */ @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Love+Light&display=swap");
 /* rochester */ @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Love+Light&family=Rochester&display=swap");
 
+:root {
+  /* --- BACKROUND COLOR --- */
+  background-color: rgb(246, 246, 246);
+
+  /* CONTENT COLORS */
+  --contentBlue: #5ac7e8;
+  --contentOrange: #e6821e;
+  /* TEXT COLORS */
+  --textSunburn: #c7ab8f;
+  --textGrey: #5d6669;
+
+  /* EXTRA COLORS */
+  --extraColor: #6c9aa8;
+}
+
+
+/* -------------------------------------------------------------------------------------- NAVIGATION MENU -------------------------------------------------------------------------------------- */
+nav {
+  background-color: whitesmoke;
+  /* border-bottom: 3px solid black;
+  border-top: 3px solid black; */
+  display: flex;
+  /* list-style-type: none; */
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-evenly;
+  height: 6rem;
+  z-index: 100;
+  box-shadow: 0px 10px rgb(205, 204, 204);  
+  top:0rem;
+}
+
+nav > a {
+  align-self: center;
+  font-size: xx-large;
+  text-decoration: none;
+  color: black;
+  font-family: 'Jacques Francois', ital;
+}
+
+nav ul li{
+  list-style-type: none;
+  padding: 1rem;
+  margin-right: 10vh;
+}
+
+nav ul{
+  display: flex;
+}
 
 /* --- BACKGROUND FOR ALL PAGES --- */
 body{
@@ -24,8 +74,44 @@ body{
   #home-fade-in.fade-out {
     opacity: 0;
   }
+
+
+  .parallax {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* The image used */
+    background-image: url("/5landscapeIMG/landscape-fullImage.jpg");
   
-/* aBnstartupScreen */
+    /* Set a specific height */
+    height: 800px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.text-container {
+    color: white;
+    background-attachment: fixed;
+
+    background: rgba(90, 199, 232, 0.5);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    font-size: x-large;
+}
+
+.text-container h1{
+  font-size: 50px;
+  background-attachment: fixed;
+
+}
+
+/* index */
 /* #startup-text{
     font-family: "Rochester", cursive;
     font-weight: 400;
@@ -59,3 +145,26 @@ div {
     75%  {background-color:green; left:0px; top:200px;}
     100% {background-color:red; left:200px; top:200px;}
 } */
+
+@media screen and (max-width: 300px) {
+  .parallax {
+    height: 200px;
+    background-attachment: scroll;
+    background-image: url("/5landscapeIMG/landscape-fullImage.jpg");
+  }
+  .text-container {
+    color: white;
+    background-attachment: fixed;
+
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .text-container h1{
+    font-size: x-large;
+
+  }
+
+}
