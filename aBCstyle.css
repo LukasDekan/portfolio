@@ -22,7 +22,6 @@
 
 /* -------------------------------------------------------------------------------------- NAVIGATION MENU -------------------------------------------------------------------------------------- */
 .dropbtn{
-  align-self: center;
   font-size: xx-large;
   text-decoration: none;
   background-color: white;
@@ -50,6 +49,8 @@ nav {
 }
 
 .dropdown-content {
+  color: black;
+
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -65,10 +66,10 @@ nav {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {transition-duration: 0.6s; background-color: #f1f1f1; padding: 1.5rem; color: black;}
 
-.nav:hover .dropdown-content {
-  display: block;
+.dropbtn:hover .dropdown-content {
+    display: block;
 }
 
 .nav:hover .dropbtn {
@@ -76,11 +77,38 @@ nav {
 }
 
 nav a{
+  color: black;
+
+  /* padding-right: 12rem; */
   text-decoration: none;
   align-self: center;
   font-size: xx-large;
-  color: black;
   font-family: "Rochester", cursive;
+
+}
+
+#homeButton{
+  font-family: "Love Light", cursive;
+  font-size: 43px;
+  text-align: center;
+  width: 4rem;
+  /* border-right: 3px solid rgb(218, 218, 218); */
+}
+
+
+#homeButton:hover{
+  transition-duration: 0.25s;
+  color: var(--contentOrange);
+  font-size: 46px;
+}
+
+nav a:hover{
+    transition-duration: 0.25s;
+    color: var(--contentOrange);
+
+  /* padding-right: 12rem; */
+ 
+
 }
 
 nav ul li{
@@ -91,6 +119,7 @@ nav ul li{
 
 nav ul{
   display: flex;
+  justify-content: space-around;
 }
 
 
@@ -103,7 +132,7 @@ p{
 
 h2{
     font-family: "Love Light", cursive;
-      font-size: 70px;
+    font-size: 70px;
 }
  
 

@@ -1,3 +1,7 @@
+/* FONTS USED: */
+/* love light */ @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Love+Light&family=Rochester&display=swap");
+/* rochester */ @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Italianno&family=Jacques+Francois&family=Love+Light&display=swap");
+
 :root {
     /* --- BACKROUND COLOR --- */
     background-color: rgb(246, 246, 246);
@@ -5,53 +9,119 @@
     --headerColor:#38b6ff;
     --leftHandSide: #5271ff;
     --volunteerColor: #c2f6ff;
+
+    /* CONTENT COLORS */
+  --contentBlue: #5ac7e8;
+  --contentOrange: #e6821e;
+  /* TEXT COLORS */
+  --textSunburn: rgb(199, 171, 143);
+  --textGrey: #5d6669;
+
+  /* EXTRA COLORS */
+  --extraColor: #6c9aa8;
 }
 
 /* -------------------------------------------------------------------------------------- NAVIGATION MENU -------------------------------------------------------------------------------------- */
 .dropbtn{
-  align-self: center;
-  font-size: xx-large;
-  text-decoration: none;
-  color: black;
-  font-family: "Rochester", cursive;
-  border: none;
-  cursor: pointer;
-}   
-
-nav {
-  background-color: white;
-  /* border-bottom: 3px solid black;
-  border-top: 3px solid black; */
-  display: flex;
-  /* list-style-type: none; */
-  position: fixed;
-  width: 100%;
-  padding: 1rem;
-  justify-content: space-evenly;
-  height: 6rem;
-  z-index: 100;
-  box-shadow: 0px 10px rgb(241, 241, 241);  
-  top:0rem;
-}
-
-nav a{
-  text-decoration: none;
-  align-self: center;
-  font-size: xx-large;
-  color: black;
-}
-
-
-
-nav ul li{
-  list-style-type: none;
-  padding: 1rem;
-  margin-right: 10vh;
-}
-
-nav ul{
-  display: flex;
-}
+    font-size: xx-large;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-family: "Rochester", cursive;
+    border: none;
+    cursor: pointer;
+  }  
+  
+  nav {
+    position: fixed;
+    display: inline-block;
+    background-color: white;
+    /* border-bottom: 3px solid black;
+    border-top: 3px solid black; */
+    /* display: flex; */
+    /* list-style-type: none; */
+    width: 100%;
+    padding: 1rem;
+    /* justify-content: space-evenly; */
+    height: 6rem;
+    z-index: 100;
+    box-shadow: 0px 10px rgb(241, 241, 241);  
+    top:0rem;
+  }
+  
+  .dropdown-content {
+    color: black;
+  
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {transition-duration: 0.6s; background-color: #f1f1f1; padding: 1.5rem; color: black;}
+  
+  .dropbtn:hover .dropdown-content {
+      display: block;
+  }
+  
+  .nav:hover .dropbtn {
+    background-color: lightgray;
+  }
+  
+  nav a{
+    color: black;
+  
+    /* padding-right: 12rem; */
+    text-decoration: none;
+    align-self: center;
+    font-size: xx-large;
+    font-family: "Rochester", cursive;
+  
+  }
+  
+  #homeButton{
+    font-family: "Love Light", cursive;
+    font-size: 43px;
+    text-align: center;
+    width: 4rem;
+    /* border-right: 3px solid rgb(218, 218, 218); */
+  }
+  
+  
+  #homeButton:hover{
+    transition-duration: 0.25s;
+    color: var(--contentOrange);
+    font-size: 46px;
+  }
+  
+  nav a:hover{
+      transition-duration: 0.25s;
+      color: var(--contentOrange);
+  
+    /* padding-right: 12rem; */
+   
+  
+  }
+  
+  nav ul li{
+    list-style-type: none;
+    padding: 1rem;
+    margin-right: 10vh;
+  }
+  
+  nav ul{
+    display: flex;
+    justify-content: space-around;
+  }
 
 body{
     margin-top: 10rem;
