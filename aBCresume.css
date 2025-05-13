@@ -7,6 +7,56 @@
     --volunteerColor: #c2f6ff;
 }
 
+/* -------------------------------------------------------------------------------------- NAVIGATION MENU -------------------------------------------------------------------------------------- */
+.dropbtn{
+  align-self: center;
+  font-size: xx-large;
+  text-decoration: none;
+  color: black;
+  font-family: "Rochester", cursive;
+  border: none;
+  cursor: pointer;
+}   
+
+nav {
+  background-color: white;
+  /* border-bottom: 3px solid black;
+  border-top: 3px solid black; */
+  display: flex;
+  /* list-style-type: none; */
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-evenly;
+  height: 6rem;
+  z-index: 100;
+  box-shadow: 0px 10px rgb(241, 241, 241);  
+  top:0rem;
+}
+
+nav a{
+  text-decoration: none;
+  align-self: center;
+  font-size: xx-large;
+  color: black;
+}
+
+
+
+nav ul li{
+  list-style-type: none;
+  padding: 1rem;
+  margin-right: 10vh;
+}
+
+nav ul{
+  display: flex;
+}
+
+body{
+    margin-top: 10rem;
+}
+
 /* ---------------------------------------------------------- */
 /* GENERAL PARENT CLASS FOR ARTICLE CONTAINER */
 /* .resume-header-leftSide-connection{

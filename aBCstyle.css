@@ -1,6 +1,6 @@
 /* FONTS USED: */
-/* love light */ @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Love+Light&display=swap");
-/* rochester */ @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Love+Light&family=Rochester&display=swap");
+/* love light */ @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Love+Light&family=Rochester&display=swap");
+/* rochester */ @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Italianno&family=Jacques+Francois&family=Love+Light&display=swap");
 
 :root {
   /* --- BACKROUND COLOR --- */
@@ -10,7 +10,7 @@
   --contentBlue: #5ac7e8;
   --contentOrange: #e6821e;
   /* TEXT COLORS */
-  --textSunburn: #c7ab8f;
+  --textSunburn: rgb(199, 171, 143);
   --textGrey: #5d6669;
 
   /* EXTRA COLORS */
@@ -18,29 +18,69 @@
 }
 
 
-/* -------------------------------------------------------------------------------------- NAVIGATION MENU -------------------------------------------------------------------------------------- */
-nav {
-  background-color: whitesmoke;
-  /* border-bottom: 3px solid black;
-  border-top: 3px solid black; */
-  display: flex;
-  /* list-style-type: none; */
-  position: fixed;
-  width: 100%;
-  padding: 1rem;
-  justify-content: space-evenly;
-  height: 6rem;
-  z-index: 100;
-  box-shadow: 0px 10px rgb(205, 204, 204);  
-  top:0rem;
-}
 
-nav > a {
+
+/* -------------------------------------------------------------------------------------- NAVIGATION MENU -------------------------------------------------------------------------------------- */
+.dropbtn{
   align-self: center;
   font-size: xx-large;
   text-decoration: none;
+  background-color: white;
   color: black;
-  font-family: 'Jacques Francois', ital;
+  font-family: "Rochester", cursive;
+  border: none;
+  cursor: pointer;
+}  
+
+nav {
+  position: fixed;
+  display: inline-block;
+  background-color: white;
+  /* border-bottom: 3px solid black;
+  border-top: 3px solid black; */
+  /* display: flex; */
+  /* list-style-type: none; */
+  width: 100%;
+  padding: 1rem;
+  /* justify-content: space-evenly; */
+  height: 6rem;
+  z-index: 100;
+  box-shadow: 0px 10px rgb(241, 241, 241);  
+  top:0rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.nav:hover .dropdown-content {
+  display: block;
+}
+
+.nav:hover .dropbtn {
+  background-color: lightgray;
+}
+
+nav a{
+  text-decoration: none;
+  align-self: center;
+  font-size: xx-large;
+  color: black;
+  font-family: "Rochester", cursive;
 }
 
 nav ul li{
@@ -52,6 +92,23 @@ nav ul li{
 nav ul{
   display: flex;
 }
+
+
+/* -------------------------------------------------------------------------------------- CONTENT STYLING -------------------------------------------------------------------------------------- */
+
+p{
+  font-family: "Rochester", cursive;
+  font-size: x-large;
+}
+
+h2{
+    font-family: "Love Light", cursive;
+      font-size: 70px;
+}
+ 
+
+
+
 
 /* --- BACKGROUND FOR ALL PAGES --- */
 body{
@@ -82,6 +139,7 @@ body{
     justify-content: center;
     /* The image used */
     background-image: url("/5landscapeIMG/landscape-fullImage.jpg");
+    opacity: 50%;
   
     /* Set a specific height */
     height: 800px;
@@ -96,8 +154,8 @@ body{
     color: white;
     background-attachment: fixed;
 
-    background: rgba(90, 199, 232, 0.5);
-    padding: 2rem;
+    /* background: rgba(199, 171, 143, 0.5); */
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,9 +164,10 @@ body{
 }
 
 .text-container h1{
-  font-size: 50px;
+  z-index: 1;
+  font-size: 200px;
   background-attachment: fixed;
-
+  font-family: "Love Light", cursive;
 }
 
 /* index */
