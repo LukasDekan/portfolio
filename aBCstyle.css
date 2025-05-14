@@ -101,7 +101,7 @@ nav a{
 #homeButton:hover{
   transition-duration: 0.25s;
   color: var(--contentOrange);
-  font-size: 46px;
+  font-size: 45px;
 }
 
 nav a:hover{
@@ -376,13 +376,11 @@ div {
 }
 
 #imageArticle img{
-  align-self: center;
-}
-
-#portrait{
+  margin-left: 10rem;
   align-self: center;
   width: 50%
 }
+
 
 
 
