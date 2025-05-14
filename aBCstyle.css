@@ -409,12 +409,14 @@ body{
     background-size: cover;
   }
 
-    .parallaxYT{
+  .parallaxYT{
+    color: black;
+
     display: flex;
     width: 100%;
     justify-content: center;
     /* The image used */
-    background-image: url("/7pulpIMG/pulp.png");
+    background-image: url("/9tutorialsIMG/heroIMG.png");
     opacity: 50%;
   
     /* Set a specific height */
@@ -426,6 +428,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+    .parallaxYT h1{
+    color: black;
+    }
 
 .text-container {
     color: white;
