@@ -138,7 +138,7 @@ footer {
 
   color:black;        
   width:100%;
-  background-color: whitesmoke;
+  background-color: rgb(244, 244, 244);
   box-shadow: 0px 10px rgb(205, 204, 204);
 }
 
@@ -239,6 +239,26 @@ footer ul li a{
 
 /* -------------------------------------------------------------------------------------- CONTENT STYLING -------------------------------------------------------------------------------------- */
 
+
+#articleMargins{
+  line-height: 3rem;
+  margin-right: 12rem;
+  margin-left: 12rem;
+}
+
+
+#imageArticle ul li{
+font-family: "Rochester", cursive;
+  font-size: x-large;
+}
+
+
+#imageArticle h1{
+  text-align: center;
+  font-family: "Love Light", cursive;
+    font-size: 70px;
+}
+
 p{
   font-family: "Rochester", cursive;
   font-size: xx-large;
@@ -248,13 +268,30 @@ h2{
     font-family: "Love Light", cursive;
     font-size: 70px;
 }
- 
 
+#checkOutWebste{
+  padding: 6rem;
+  font-size:  70px;
+  text-align: center;
+}
+
+#checkOutWebste a{
+    font-size:  85px;
+  text-decoration: none;
+  color: var(--textGrey);
+}
+
+#checkOutWebste a:hover{
+  transition-duration: 0.2s;
+  font-size:  90px;
+  color: var(--contentOrange);
+}
 
 
 
 /* --- BACKGROUND FOR ALL PAGES --- */
 body{
+    margin-top: 8rem;
     background-image: url("/0StartupIMG/1background.png");
 }
 
@@ -293,6 +330,103 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+
+    .parallaxMothPicture{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* The image used */
+    background-image: url("/2artIMG/art-heroImage.jpg");
+    opacity: 50%;
+  
+    /* Set a specific height */
+    height: 800px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallaxMothPicture{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* The image used */
+    background-image: url("/2artIMG/art-heroImage.jpg");
+    opacity: 50%;
+  
+    /* Set a specific height */
+    height: 800px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .special{
+    color:black;
+  }
+
+  .parallaxThanksgiving{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* The image used */
+    background-image: url("/8thanksgivingIMG/thanksgiving-hero-image.png");
+    opacity: 50%;
+  
+    /* Set a specific height */
+    height: 800px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .parallaxPulp{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* The image used */
+    background-image: url("/7pulpIMG/pulp.png");
+    opacity: 50%;
+  
+    /* Set a specific height */
+    height: 800px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+    .parallaxYT{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* The image used */
+    background-image: url("/7pulpIMG/pulp.png");
+    opacity: 50%;
+  
+    /* Set a specific height */
+    height: 800px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 .text-container {
     color: white;
     background-attachment: fixed;
@@ -311,6 +445,18 @@ body{
   font-size: 200px;
   background-attachment: fixed;
   font-family: "Love Light", cursive;
+}
+
+#pixelArt{
+  display: flex; 
+  justify-content: flex-end;
+}
+
+#conceptArt{
+  display: flex; 
+  justify-content: center;
+  width: 1000px;
+  height: 590px;
 }
 
 /* index */
@@ -352,19 +498,16 @@ div {
 /* -------------------------------------------------------------------------------------- IMAGE STYLING -------------------------------------------------------------------------------------- */
 
 #imageSizing{
-  justify-self: flex-end;
+  align-self: center  ;
   width: 30%;
 }
 
-#articleMargins{
-  line-height: 3rem;
-  margin-right: 12rem;
-  margin-left: 12rem;
-}
+
 
 #imageArticle{
   display: flex;
   flex-direction: column;
+  align-items: center;
   line-height: 3rem;
   margin-right: 12rem;
   margin-left: 12rem;
@@ -376,8 +519,8 @@ div {
 }
 
 #imageArticle img{
-  margin-left: 10rem;
-  align-self: center;
+  margin-left: 14.5rem;
+  /* justify-self: center; */
   width: 50%
 }
 
@@ -413,7 +556,6 @@ div {
   }
   .text-container h1{
     font-size: x-large;
-
   }
 
 }

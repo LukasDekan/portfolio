@@ -301,3 +301,447 @@ body{
 }
 
 
+/* -------------------------------------------------------------------------------------- NAVIGATION MENU -------------------------------------------------------------------------------------- */
+.dropbtn{
+  font-size: xx-large;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  font-family: "Rochester", cursive;
+  border: none;
+  cursor: pointer;
+}  
+
+nav {
+  position: fixed;
+  display: inline-block;
+  background-color: white;
+  /* border-bottom: 3px solid black;
+  border-top: 3px solid black; */
+  /* display: flex; */
+  /* list-style-type: none; */
+  width: 100%;
+  padding: 1rem;
+  /* justify-content: space-evenly; */
+  height: 6rem;
+  z-index: 100;
+  box-shadow: 0px 10px rgb(241, 241, 241);  
+  top:0rem;
+}
+
+.dropdown-content {
+  color: black;
+
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {transition-duration: 0.6s; background-color: #f1f1f1; padding: 1.5rem; color: black;}
+
+.dropbtn:hover .dropdown-content {
+    display: block;
+}
+
+.nav:hover .dropbtn {
+  background-color: lightgray;
+}
+
+nav a{
+  color: black;
+
+  /* padding-right: 12rem; */
+  text-decoration: none;
+  align-self: center;
+  font-size: xx-large;
+  font-family: "Rochester", cursive;
+
+}
+
+#homeButton{
+  text-decoration: none;
+  color: black;
+  font-family: "Love Light", cursive;
+  font-size: 43px;
+  text-align: center;
+  width: 4rem;
+  /* border-right: 3px solid rgb(218, 218, 218); */
+}
+
+
+#homeButton:hover{
+  transition-duration: 0.25s;
+  color: var(--contentOrange);
+  font-size: 45px;
+}
+
+nav a:hover{
+    transition-duration: 0.25s;
+    color: var(--contentOrange);
+
+  /* padding-right: 12rem; */
+ 
+
+}
+
+nav ul li{
+  list-style-type: none;
+  padding: 1rem;
+  margin-right: 10vh;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  /* justify-self: center; */
+  justify-content: space-around;
+  align-content: space-around;
+  text-align: left;
+  
+
+  color:black;        
+  width:100%;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 0px 10px rgb(205, 204, 204);
+}
+
+
+/* -------------------------------------------------------------------------------------- FOOTER MENU -------------------------------------------------------------------------------------- */
+
+footer{
+  display: flex;
+}
+
+footer ul {
+  list-style: none;
+}
+
+
+
+footer ul li{
+  display: inline;
+  list-style: none;
+}
+
+footer ul li a{
+  font-family: "Rochester", cursive;
+  text-decoration: none;
+  color: black;
+}
+
+.footer_text {
+  margin-top: 3.5rem;
+  font-size: large;
+}
+
+.footer-title{
+  align-self: space-between;
+  justify-self: center;
+  font-weight: 600px;
+  font-size: 64px;
+
+  color: lightgrey;
+}
+
+.footer_content{
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  align-self: center;
+}
+
+.footer_buttons{
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+  line-height: 300%;
+  text-decoration: none;
+
+  margin-right: 8rem;
+}
+
+.footer_buttons > a:focus{
+  color: orange;
+  transition-duration:400ms;
+}
+
+.footer_buttons > a:hover{
+  color: orange;
+  transition-duration:400ms;
+}
+
+.footer_buttons > a{
+  text-decoration: none;
+  color: black;
+}
+
+.footer-section1{
+  display: flex;
+  flex-direction: column;
+  line-height: 3rem;
+}
+
+
+.footer-section2{
+  display: flex;
+  flex-direction: column;
+  line-height: 3rem;
+}
+
+.vl2 {
+  font-size: xx-large;
+  line-height: 78%;
+}
+
+.footer_buttons a:hover{
+  font-size: x-large;
+  color: var(--contentOrange);
+  transition-duration: 0.4s;
+}
+
+
+/* -------------------------------------------------------------------------------------- CONTENT STYLING -------------------------------------------------------------------------------------- */
+
+
+#articleMargins{
+  line-height: 3rem;
+  margin-right: 12rem;
+  margin-left: 12rem;
+}
+
+
+/* --- BACKGROUND FOR ALL PAGES --- */
+body{
+    margin-top: 8rem;
+    /* background-image: url("/0StartupIMG/1background.png"); */
+}
+
+#home-fade-in {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 9999;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 3s ease-in-out;
+  }
+  
+  #home-fade-in.fade-out {
+    opacity: 0;
+  }
+
+
+  .parallax {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* The image used */
+    background-image: url("/5landscapeIMG/landscape-fullImage.jpg");
+    opacity: 50%;
+  
+    /* Set a specific height */
+    height: 800px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+    .parallaxMothPicture{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* The image used */
+    background-image: url("/2artIMG/art-heroImage.jpg");
+    opacity: 50%;
+  
+    /* Set a specific height */
+    height: 800px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallaxMothPicture{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* The image used */
+    background-image: url("/2artIMG/art-heroImage.jpg");
+    opacity: 50%;
+  
+    /* Set a specific height */
+    height: 800px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallaxThanksgiving{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* The image used */
+    background-image: url("/8thanksgivingIMG/thanksgiving-hero-image.png");
+    opacity: 50%;
+  
+    /* Set a specific height */
+    height: 800px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.text-container {
+    color: white;
+    background-attachment: fixed;
+
+    /* background: rgba(199, 171, 143, 0.5); */
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    font-size: x-large;
+}
+
+.text-container h1{
+  z-index: 1;
+  font-size: 200px;
+  background-attachment: fixed;
+  font-family: "Love Light", cursive;
+}
+
+/* index */
+/* #startup-text{
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:125px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16rem;
+
+    transition-duration: 2s;
+    color:white;
+    color: black;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  } */
+
+/* @keyframes example {
+    0%   {background-color:red; left:200px; top:200px;}
+    25%  {background-color:yellow; left:1700px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:200px; top:200px;}
+} */
+
+
+/* -------------------------------------------------------------------------------------- IMAGE STYLING -------------------------------------------------------------------------------------- */
+
+#imageSizing{
+  align-self: center  ;
+  width: 30%;
+}
+
+
+
+#imageArticle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 3rem;
+  margin-right: 12rem;
+  margin-left: 12rem;
+}
+
+#imageArticle h2{
+  font-size: 120px;
+  justify-self: center;
+}
+
+#imageArticle img{
+  margin-left: 14.5rem;
+  /* justify-self: center; */
+  width: 50%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 300px) {
+  .parallax {
+    height: 200px;
+    background-attachment: scroll;
+    background-image: url("/5landscapeIMG/landscape-fullImage.jpg");
+  }
+  .text-container {
+    color: white;
+    background-attachment: fixed;
+
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .text-container h1{
+    font-size: x-large;
+  }
+
+}
