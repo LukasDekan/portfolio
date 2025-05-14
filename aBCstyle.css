@@ -256,7 +256,7 @@ font-family: "Rochester", cursive;
 #imageArticle h1{
   text-align: center;
   font-family: "Love Light", cursive;
-    font-size: 70px;
+    font-size: 160px;
 }
 
 p{
@@ -458,12 +458,31 @@ body{
   justify-content: flex-end;
 }
 
+#pixelArt img{
+  margin-right: 5rem;
+}
+
 #conceptArt{
   display: flex; 
-  justify-content: center;
-  width: 1000px;
-  height: 590px;
+  flex-direction: row;
+  margin-right: 12rem;
+  margin-left: 12rem;
 }
+
+#conceptArtImg{
+  margin-left: 24rem;
+
+  align-self: center;
+  width: 50%;
+}
+
+
+#conceptArtP{
+  margin-right: 12rem;
+  margin-left: 12rem;
+  font-size: 40px;
+}
+
 
 /* index */
 /* #startup-text{
@@ -504,7 +523,6 @@ div {
 /* -------------------------------------------------------------------------------------- IMAGE STYLING -------------------------------------------------------------------------------------- */
 
 #imageSizing{
-  align-self: center  ;
   width: 30%;
 }
 
@@ -519,13 +537,13 @@ div {
   margin-left: 12rem;
 }
 
-#imageArticle h2{
+#imageArticle h2{ 
   font-size: 120px;
   justify-self: center;
 }
 
 #imageArticle img{
-  margin-left: 14.5rem;
+  margin-left: 24rem;
   /* justify-self: center; */
   width: 50%
 }
